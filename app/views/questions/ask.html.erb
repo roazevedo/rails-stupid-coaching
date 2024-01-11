@@ -1,0 +1,12 @@
+<div class="container mt-4 shadow p-3 mb-5 bg-body rounded">
+<h1 class="mt-3">Ask me!</h1>
+<form action="/answer" method="get" data-turbo="false" class="d-flex flex-column mt-3">
+  <input type="text" name="question" value="<% params[:question] %>" style="width: 700px;">
+  <input type="submit" value="Ask!" class="btn btn-primary my-3" style="width: 100px;">
+</form>
+
+<%= link_to "Back to home", root_path %>
+</div>
+
+
+<%# "mx-auto" style="width: 200px;" %>
